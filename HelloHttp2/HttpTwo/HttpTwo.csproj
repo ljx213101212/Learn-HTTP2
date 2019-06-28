@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net46</TargetFrameworks>
+    <AssemblyName>HttpTwo</AssemblyName>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageId>HttpTwo</PackageId>
+    <Title>HttpTwo</Title>
+    <Summary>HTTP/2 C# Client Side Implementation</Summary>
+    <Description>HTTP/2 C# Client Side Implementation</Description>
+    <PackageTags>HTTP, HTTP2, HTTP/2, HTTPTWO, Http Two, HTTP 2, HTTP.2, HTTP_2, HTTP-2</PackageTags>
+    <Authors>Redth</Authors>
+    <Owners>Redth</Owners>
+    <PackageProjectUrl>https://github.com/redth/HttpTwo</PackageProjectUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/redth/HttpTwo/master/HttpTwo-Icon.png</PackageIconUrl>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/redth/HttpTwo/master/LICENSE.md</PackageLicenseUrl>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <ApplicationIcon />
+    <OutputType>Library</OutputType>
+    <StartupObject />
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net46|AnyCPU'">
+    <OutputPath>bin\Debug\net46\</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HttpTwo.HPack\HttpTwo.HPack.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Net.Http">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Net.Http.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
